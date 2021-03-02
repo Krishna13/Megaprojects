@@ -1,0 +1,474 @@
+{% extends 'admin_templates/base.html' %} {% load static %} {%block main_content%}
+
+<div class="content-body" style="position: relative;">
+    <!-- Statistics -->
+
+    <div class="row">
+        <div class="col-xl-3 col-lg-6 col-xs-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="media">
+                        <div class="p-2 text-xs-center bg-cyan bg-darken-2 media-left media-middle">
+                            <i class="icon-bakelitedisk font-large-2 white"></i>
+                        </div>
+                        <div class="p-2 bg-cyan white media-body">
+                            <h5>Chamfer Grinding</h5>
+                            <h5 class="text-bold-400">42,000</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-xs-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="media">
+                        <div class="p-2 text-xs-center bg-deep-orange bg-darken-2 media-left media-middle">
+                            <i class="icon-bakelitedisk font-large-2 white"></i>
+                        </div>
+                        <div class="p-2 bg-deep-orange white media-body">
+                            <h5>Internal Grinding</h5>
+                            <h5 class="text-bold-400">40,200</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-xs-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="media">
+                        <div class="p-2 text-xs-center bg-teal bg-darken-2 media-left media-middle">
+                            <i class="icon-bakelitedisk font-large-2 white"></i>
+                        </div>
+                        <div class="p-2 bg-teal white media-body">
+                            <h5>External Grinding</h5>
+                            <h5 class="text-bold-400">40,300</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-xs-12">
+            <a href="#">
+
+                <div class="card">
+                    <div class="card-body">
+                        <div class="media">
+                            <div class="p-2 text-xs-center bg-pink bg-darken-2 media-left media-middle">
+                                <i class="icon-pencil font-large-2 white"></i>
+                            </div>
+                            <div class="p-2 bg-pink white media-body">
+                                <h5>Laser Marking</h5>
+                                <h5 class="text-bold-400">39,850</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!--/ Statistics -->
+    <div class="row">
+        <div class="col-xl-8 col-lg-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Recent Breakdowns</h4>
+                    <a class="heading-elements-toggle"><i class="icon-ellipsis font-medium-3"></i></a>
+                    <div class="heading-elements">
+                        <ul class="list-inline mb-0">
+                            <li><a data-action="reload"><i class="icon-reload"></i></a></li>
+                            <li><a data-action="expand"><i class="icon-expand2"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card-body">
+
+                    <div class="table-responsive">
+                        <table class="table table-hover mb-0">
+                            <thead>
+                                <tr>
+                                    <th>Machine Number</th>
+                                    <th>Problem Description</th>
+                                    <th>Action Taken</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-truncate">3703075198</td>
+                                    <td class="text-truncate">Seat Finish Bad</td>
+                                    <td class="text-truncate">Seat Spindle Changed</td>
+                                    <td class="text-truncate"><span class="tag tag-warning">Pending</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-truncate">3703054480</td>
+                                    <td class="text-truncate">Loading Pin Broken</td>
+                                    <td class="text-truncate">Loading Alignment done and pin changed</td>
+                                    <td class="text-truncate"><span class="tag tag-success">OK</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-truncate">3703020294</td>
+                                    <td class="text-truncate">oil leakage</td>
+                                    <td class="text-truncate">Machine under maintenence</td>
+                                    <td class="text-truncate"><span class="tag tag-danger">Not Ok</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-truncate">3703055733</td>
+                                    <td class="text-truncate">Size variation</td>
+                                    <td class="text-truncate">Marposs Setting done</td>
+                                    <td class="text-truncate"><span class="tag tag-success">OK</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-truncate">3703055337</td>
+                                    <td class="text-truncate">Work head noise too high</td>
+                                    <td class="text-truncate">Work head Ch2 Bearing changed</td>
+                                    <td class="text-truncate"><span class="tag tag-success">OK</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-truncate">3703020577</td>
+                                    <td class="text-truncate">Loading magzine jammed</td>
+                                    <td class="text-truncate">Under Mechanical maintanence</td>
+                                    <td class="text-truncate"><span class="tag tag-warning">Pending</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-truncate">3703020318</td>
+                                    <td class="text-truncate">Guide bore oversize tr.</td>
+                                    <td class="text-truncate">Machine under TEF</td>
+                                    <td class="text-truncate"><span class="tag tag-danger">Not OK</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-truncate">3703076135</td>
+                                    <td class="text-truncate">Part Abnormality</td>
+                                    <td class="text-truncate">Part Changed and disposed</td>
+                                    <td class="text-truncate"><span class="tag tag-success">OK</span></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-4 col-lg-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Overall Progress</h4>
+                    <a class="heading-elements-toggle"><i class="icon-ellipsis font-medium-3"></i></a>
+                    <div class="heading-elements">
+                        <ul class="list-inline mb-0">
+                            <li><a data-action="collapse"><i class="icon-minus4"></i></a></li>
+                            <li><a data-action="reload"><i class="icon-reload"></i></a></li>
+                            <li><a data-action="expand"><i class="icon-expand2"></i></a></li>
+                            <li><a data-action="close"><i class="icon-cross2"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card-body collapse in">
+                    <div class="card-block">
+                        <canvas id="simple-doughnut-chart" height="400"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="col-xl-4 col-lg-12">
+            <div class="card bg-cyan">
+                <div class="card-body">
+                    <div class="card-block">
+                        <div class="media">
+                            <div class="media-left media-middle">
+                                <i class="icon-pencil white font-large-2 float-xs-left"></i>
+                            </div>
+                            <div class="media-body white text-xs-right">
+                                <h3>278</h3>
+                                <span>New Posts</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-teal">
+                <div class="card-body">
+                    <div class="card-block">
+                        <div class="media">
+                            <div class="media-body white text-xs-left">
+                                <h3>156</h3>
+                                <span>New Clients</span>
+                            </div>
+                            <div class="media-right media-middle">
+                                <i class="icon-user1 white font-large-2 float-xs-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-deep-orange">
+                <div class="card-body">
+                    <div class="card-block">
+                        <div class="media">
+                            <div class="media-left media-middle">
+                                <i class="icon-chat1 white font-large-2 float-xs-left"></i>
+                            </div>
+                            <div class="media-body white text-xs-right">
+                                <h3>156</h3>
+                                <span>New Comments</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-cyan">
+                <div class="card-body">
+                    <div class="card-block">
+                        <div class="media">
+                            <div class="media-body white text-xs-left">
+                                <h3>423</h3>
+                                <span>Support Tickets</span>
+                            </div>
+                            <div class="media-right media-middle">
+                                <i class="icon-ios-help-outline white font-large-2 float-xs-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Bar Stacked Chart</h4>
+                    <a class="heading-elements-toggle"><i class="icon-ellipsis font-medium-3"></i></a>
+                    <div class="heading-elements">
+                        <ul class="list-inline mb-0">
+                            <li><a data-action="collapse"><i class="icon-minus4"></i></a></li>
+                            <li><a data-action="reload"><i class="icon-reload"></i></a></li>
+                            <li><a data-action="expand"><i class="icon-expand2"></i></a></li>
+                            <li><a data-action="close"><i class="icon-cross2"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card-body collapse in">
+                    <div class="card-block">
+                        <canvas id="bar-stacked" height="400"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xl-8 col-lg-12">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Recent Messages</h4>
+                <a class="heading-elements-toggle"><i class="icon-ellipsis font-medium-3"></i></a>
+                <div class="heading-elements">
+                    <ul class="list-inline mb-0">
+                        <li><a data-action="reload"><i class="icon-reload"></i></a></li>
+                        <li><a data-action="expand"><i class="icon-expand2"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="card-block">
+                    <p class="m-0">Total ongoing projects 6<span class="float-xs-right"><a href="#" target="_blank">Project Summary <i class="icon-arrow-right2"></i></a></span></p>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-hover mb-0">
+                        <thead>
+                            <tr>
+                                <th>Project</th>
+                                <th>Owner</th>
+                                <th>Priority</th>
+                                <th>Progress</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-truncate">ReactJS App</td>
+                                <td class="text-truncate">
+                                    <span class="avatar avatar-xs"><img src="../../app-assets/images/portrait/small/avatar-s-4.png" alt="avatar"></span> <span>Sarah W.</span>
+                                </td>
+                                <td class="text-truncate"><span class="tag tag-success">Low</span></td>
+                                <td class="valign-middle">
+                                    <progress value="88" max="100" class="progress progress-xs progress-success m-0">88%</progress>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-truncate">Fitness App</td>
+                                <td class="text-truncate">
+                                    <span class="avatar avatar-xs"><img src="../../app-assets/images/portrait/small/avatar-s-5.png" alt="avatar"></span> <span>Edward C.</span>
+                                </td>
+                                <td class="text-truncate"><span class="tag tag-warning">Medium</span></td>
+                                <td class="valign-middle">
+                                    <progress value="55" max="100" class="progress progress-xs progress-warning m-0">55%</progress>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-truncate">SOU plugin</td>
+                                <td class="text-truncate">
+                                    <span class="avatar avatar-xs"><img src="../../app-assets/images/portrait/small/avatar-s-6.png" alt="avatar"></span> <span>Carol E.</span>
+                                </td>
+                                <td class="text-truncate"><span class="tag tag-danger">Critical</span></td>
+                                <td class="valign-middle">
+                                    <progress value="25" max="100" class="progress progress-xs progress-danger m-0">25%</progress>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-truncate">Android App</td>
+                                <td class="text-truncate">
+                                    <span class="avatar avatar-xs"><img src="../../app-assets/images/portrait/small/avatar-s-7.png" alt="avatar"></span> <span>Gregory L.</span>
+                                </td>
+                                <td class="text-truncate"><span class="tag tag-success">Low</span></td>
+                                <td class="valign-middle">
+                                    <progress value="95" max="100" class="progress progress-xs progress-success m-0">95%</progress>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-truncate">ABC Inc. UI/UX</td>
+                                <td class="text-truncate">
+                                    <span class="avatar avatar-xs"><img src="../../app-assets/images/portrait/small/avatar-s-8.png" alt="avatar"></span> <span>Susan S.</span>
+                                </td>
+                                <td class="text-truncate"><span class="tag tag-warning">Medium</span></td>
+                                <td class="valign-middle">
+                                    <progress value="45" max="100" class="progress progress-xs progress-warning m-0">45%</progress>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-truncate">Product UI</td>
+                                <td class="text-truncate">
+                                    <span class="avatar avatar-xs"><img src="../../app-assets/images/portrait/small/avatar-s-9.png" alt="avatar"></span> <span>Walter K.</span>
+                                </td>
+                                <td class="text-truncate"><span class="tag tag-danger">Critical</span></td>
+                                <td class="valign-middle">
+                                    <progress value="15" max="100" class="progress progress-xs progress-danger m-0">15%</progress>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-truncate">Fitness App</td>
+                                <td class="text-truncate">
+                                    <span class="avatar avatar-xs"><img src="../../app-assets/images/portrait/small/avatar-s-5.png" alt="avatar"></span> <span>Edward C.</span>
+                                </td>
+                                <td class="text-truncate"><span class="tag tag-warning">Medium</span></td>
+                                <td class="valign-middle">
+                                    <progress value="55" max="100" class="progress progress-xs progress-warning m-0">55%</progress>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-4 col-lg-12">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Recent Notifications</h4>
+                <a class="heading-elements-toggle"><i class="icon-ellipsis font-medium-3"></i></a>
+                <div class="heading-elements">
+                    <ul class="list-inline mb-0">
+                        <li><a data-action="reload"><i class="icon-reload"></i></a></li>
+                        <li><a data-action="expand"><i class="icon-expand2"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="card-block">
+                    <p class="m-0">Total ongoing projects 6<span class="float-xs-right"><a href="#" target="_blank">Project Summary <i class="icon-arrow-right2"></i></a></span></p>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-hover mb-0">
+                        <thead>
+                            <tr>
+                                <th>Project</th>
+                                <th>Owner</th>
+                                <th>Priority</th>
+                                <th>Progress</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-truncate">ReactJS App</td>
+                                <td class="text-truncate">
+                                    <span class="avatar avatar-xs"><img src="../../app-assets/images/portrait/small/avatar-s-4.png" alt="avatar"></span> <span>Sarah W.</span>
+                                </td>
+                                <td class="text-truncate"><span class="tag tag-success">Low</span></td>
+                                <td class="valign-middle">
+                                    <progress value="88" max="100" class="progress progress-xs progress-success m-0">88%</progress>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-truncate">Fitness App</td>
+                                <td class="text-truncate">
+                                    <span class="avatar avatar-xs"><img src="../../app-assets/images/portrait/small/avatar-s-5.png" alt="avatar"></span> <span>Edward C.</span>
+                                </td>
+                                <td class="text-truncate"><span class="tag tag-warning">Medium</span></td>
+                                <td class="valign-middle">
+                                    <progress value="55" max="100" class="progress progress-xs progress-warning m-0">55%</progress>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-truncate">SOU plugin</td>
+                                <td class="text-truncate">
+                                    <span class="avatar avatar-xs"><img src="../../app-assets/images/portrait/small/avatar-s-6.png" alt="avatar"></span> <span>Carol E.</span>
+                                </td>
+                                <td class="text-truncate"><span class="tag tag-danger">Critical</span></td>
+                                <td class="valign-middle">
+                                    <progress value="25" max="100" class="progress progress-xs progress-danger m-0">25%</progress>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-truncate">Android App</td>
+                                <td class="text-truncate">
+                                    <span class="avatar avatar-xs"><img src="../../app-assets/images/portrait/small/avatar-s-7.png" alt="avatar"></span> <span>Gregory L.</span>
+                                </td>
+                                <td class="text-truncate"><span class="tag tag-success">Low</span></td>
+                                <td class="valign-middle">
+                                    <progress value="95" max="100" class="progress progress-xs progress-success m-0">95%</progress>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-truncate">ABC Inc. UI/UX</td>
+                                <td class="text-truncate">
+                                    <span class="avatar avatar-xs"><img src="../../app-assets/images/portrait/small/avatar-s-8.png" alt="avatar"></span> <span>Susan S.</span>
+                                </td>
+                                <td class="text-truncate"><span class="tag tag-warning">Medium</span></td>
+                                <td class="valign-middle">
+                                    <progress value="45" max="100" class="progress progress-xs progress-warning m-0">45%</progress>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-truncate">Product UI</td>
+                                <td class="text-truncate">
+                                    <span class="avatar avatar-xs"><img src="../../app-assets/images/portrait/small/avatar-s-9.png" alt="avatar"></span> <span>Walter K.</span>
+                                </td>
+                                <td class="text-truncate"><span class="tag tag-danger">Critical</span></td>
+                                <td class="valign-middle">
+                                    <progress value="15" max="100" class="progress progress-xs progress-danger m-0">15%</progress>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-truncate">Fitness App</td>
+                                <td class="text-truncate">
+                                    <span class="avatar avatar-xs"><img src="../../app-assets/images/portrait/small/avatar-s-5.png" alt="avatar"></span> <span>Edward C.</span>
+                                </td>
+                                <td class="text-truncate"><span class="tag tag-warning">Medium</span></td>
+                                <td class="valign-middle">
+                                    <progress value="55" max="100" class="progress progress-xs progress-warning m-0">55%</progress>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+{%endblock%}

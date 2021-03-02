@@ -1,0 +1,233 @@
+{% extends 'admin_templates/base.html' %} {% load static %} {%block main_content%}
+<style>
+    .profile-header {
+        /* background: linear-gradient(90deg, rgb(174, 0, 255), rgb(0, 13, 128)); */
+        background: #00adb5;
+        height: 8rem;
+    }
+    
+    .img-place {
+        text-align: center;
+    }
+    
+    .img-place img {
+        width: 8rem;
+        margin: -5rem auto 1rem;
+        padding: .08rem;
+        border: 5px solid #00adb5;
+    }
+</style>
+
+<div class="row match-height">
+    <div class="col-lg-5">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title" id="basic-layout-form">My Profile</h4>
+                <a class="heading-elements-toggle"><i class="icon-ellipsis font-medium-3"></i></a>
+                <div class="heading-elements">
+                    <ul class="list-inline mb-0">
+                        <li><a data-action="reload"><i class="icon-reload"></i></a></li>
+                        <li><a data-action="expand"><i class="icon-expand2"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-body collapse in">
+                <div class="profile-header">
+                </div>
+                <div class="img-place">
+                    <img class="rounded-circle" src="{% static 'app-assets/images/avatar.jpg' %}" alt="">
+                    <hr>
+                    <h3>Krishna Wankhede</h3>
+                    <h5>Manging Director</h5>
+                </div>
+                <div class="card-block">
+
+                    <form class="form">
+                        <div class="form-body">
+                            <h4 class="form-section"><i class="icon-head"></i> Personal Information</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="projectinput1">Employee No</label>
+                                        <input type="text" id="projectinput1" class="form-control" placeholder="Employee No" name="emplno">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="projectinput2">Main Id</label>
+                                        <input type="text" id="projectinput2" class="form-control" placeholder="Main Id" name="main id">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="projectinput1">Full Name</label>
+                                        <input type="text" id="projectinput1" class="form-control" placeholder="Full Name" name="fname">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="projectinput2">Registration Date</label>
+                                        <input type="text" id="projectinput2" class="form-control" placeholder="22/2/2021 12:23" name="lname" disabled>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="projectinput3">E-mail</label>
+                                        <input type="text" id="projectinput3" class="form-control" placeholder="E-mail" name="email">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="projectinput4">Contact Number</label>
+                                        <input type="text" id="projectinput4" class="form-control" placeholder="Phone" name="phone">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-danger mr-1">
+                                <i class="icon-cross2"></i> Cancel
+                            </button>
+                            <button type="submit" class="btn btn-warning">
+                                <i class="icon-check2"></i> Update
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-7">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title" id="basic-layout-colored-form-control">Account Settings</h4>
+                <a class="heading-elements-toggle"><i class="icon-ellipsis font-medium-3"></i></a>
+                <div class="heading-elements">
+                    <ul class="list-inline mb-0">
+                        <li><a data-action="reload"><i class="icon-reload"></i></a></li>
+                        <li><a data-action="expand"><i class="icon-expand2"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-body collapse in">
+                <div class="card-block">
+
+                    <form class="form">
+                        <div class="form-body">
+                            <!-- <h4 class="form-section"><i class="icon-eye6"></i>About yourself</h4> -->
+
+                            <div class="row">
+                                <ul class="nav nav-tabs nav-justified">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="active-tab" data-toggle="tab" href="#active" aria-controls="active" aria-expanded="true">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="link-tab" data-toggle="tab" href="#link" aria-controls="link" aria-expanded="false">More Info</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="linkOpt-tab" data-toggle="tab" href="#linkOpt" aria-controls="linkOpt" aria-expanded="false">Password Settings</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content px-1 pt-1">
+                                    <div role="tabpanel" class="tab-pane fade active in" id="active" aria-labelledby="active-tab" aria-expanded="true">
+                                        <h4 class="form-section"><i class="icon-mail6"></i> Attendance</h4>
+
+                                        <div class="form-group">
+                                            <label for="userinput5">Email</label>
+                                            <input class="form-control border-primary" type="email" placeholder="email" id="userinput5">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="userinput6">Website</label>
+                                            <input class="form-control border-primary" type="url" placeholder="http://" id="userinput6">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Contact Number</label>
+                                            <input class="form-control border-primary" id="userinput7" type="tel" placeholder="Contact Number">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="userinput8">Bio</label>
+                                            <textarea id="userinput8" rows="5" class="form-control border-primary" name="bio" placeholder="Bio"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="link" role="tabpanel" aria-labelledby="link-tab" aria-expanded="false">
+                                        <h4 class="form-section"><i class="icon-mail6"></i> Contact Info & Bio</h4>
+
+                                        <div class="form-group">
+                                            <label for="userinput5">Email</label>
+                                            <input class="form-control border-primary" type="email" placeholder="email" id="userinput5">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="userinput6">Website</label>
+                                            <input class="form-control border-primary" type="url" placeholder="http://" id="userinput6">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Contact Number</label>
+                                            <input class="form-control border-primary" id="userinput7" type="tel" placeholder="Contact Number">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="userinput8">Bio</label>
+                                            <textarea id="userinput8" rows="5" class="form-control border-primary" name="bio" placeholder="Bio"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="linkOpt" role="tabpanel" aria-labelledby="linkOpt-tab" aria-expanded="false">
+                                        <h4 class="form-section"><i class="icon-mail6"></i> Contact Info & Bio</h4>
+
+                                        <div class="form-group">
+                                            <label for="userinput5">Email</label>
+                                            <input class="form-control border-primary" type="email" placeholder="email" id="userinput5">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="userinput6">Website</label>
+                                            <input class="form-control border-primary" type="url" placeholder="http://" id="userinput6">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Contact Number</label>
+                                            <input class="form-control border-primary" id="userinput7" type="tel" placeholder="Contact Number">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="userinput8">Bio</label>
+                                            <textarea id="userinput8" rows="5" class="form-control border-primary" name="bio" placeholder="Bio"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+
+                        <div class="form-actions right">
+                            <button type="button" class="btn btn-warning mr-1">
+                                <i class="icon-cross2"></i> Cancel
+                            </button>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="icon-check2"></i> Save
+                            </button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{%endblock%}

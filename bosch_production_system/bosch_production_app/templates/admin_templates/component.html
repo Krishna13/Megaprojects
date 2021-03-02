@@ -1,0 +1,285 @@
+{% extends 'admin_templates/base.html' %} {% load static %} {%block main_content%}
+<div class="row">
+    <div class="col-xl-7 col-lg-12">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Recent Components</h4>
+                <a class="heading-elements-toggle"><i class="icon-ellipsis font-medium-3"></i></a>
+                <div class="heading-elements">
+                    <ul class="list-inline mb-0">
+                        <li><a data-action="reload"><i class="icon-reload"></i></a></li>
+                        <li><a data-action="expand"><i class="icon-expand2"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-body">
+
+                <div class="table-responsive">
+                    <table class="table table-hover mb-0">
+                        <thead>
+                            <tr>
+                                <th>Main Id</th>
+                                <th>Component Type</th>
+                                <th>LK Number</th>
+                                <th>Created At</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-truncate">1</td>
+                                <td class="text-truncate">CR 2307</td>
+                                <td class="text-truncate">2438626940</td>
+                                <td class="text-truncate">Feb. 13, 2021, 7:33 pm</td>
+                            </tr>
+                            <tr>
+                                <td class="text-truncate">1</td>
+                                <td class="text-truncate">CR 2307</td>
+                                <td class="text-truncate">2438626940</td>
+                                <td class="text-truncate">Feb. 13, 2021, 7:33 pm</td>
+                            </tr>
+                            <tr>
+                                <td class="text-truncate">1</td>
+                                <td class="text-truncate">CR 2307</td>
+                                <td class="text-truncate">2438626940</td>
+                                <td class="text-truncate">Feb. 13, 2021, 7:33 pm</td>
+                            </tr>
+                            <tr>
+                                <td class="text-truncate">1</td>
+                                <td class="text-truncate">CR 2307</td>
+                                <td class="text-truncate">2438626940</td>
+                                <td class="text-truncate">Feb. 13, 2021, 7:33 pm</td>
+                            </tr>
+                            <tr>
+                                <td class="text-truncate">1</td>
+                                <td class="text-truncate">CR 2307</td>
+                                <td class="text-truncate">2438626940</td>
+                                <td class="text-truncate">Feb. 13, 2021, 7:33 pm</td>
+                            </tr>
+                            <tr>
+                                <td class="text-truncate">1</td>
+                                <td class="text-truncate">CR 2307</td>
+                                <td class="text-truncate">2438626940</td>
+                                <td class="text-truncate">Feb. 13, 2021, 7:33 pm</td>
+                            </tr>
+                            <tr>
+                                <td class="text-truncate">1</td>
+                                <td class="text-truncate">CR 2307</td>
+                                <td class="text-truncate">2438626940</td>
+                                <td class="text-truncate">Feb. 13, 2021, 7:33 pm</td>
+                            </tr>
+                            <tr>
+                                <td class="text-truncate">1</td>
+                                <td class="text-truncate">CR 2307</td>
+                                <td class="text-truncate">2438626940</td>
+                                <td class="text-truncate">Feb. 13, 2021, 7:33 pm</td>
+                            </tr>
+
+
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-5 col-lg-12">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title" id="basic-layout-colored-form-control">Add Component</h4>
+                <a class="heading-elements-toggle"><i class="icon-ellipsis font-medium-3"></i></a>
+                <div class="heading-elements">
+                    <ul class="list-inline mb-0">
+                        <li><a data-action="collapse"><i class="icon-minus4"></i></a></li>
+                        <li><a data-action="reload"><i class="icon-reload"></i></a></li>
+                        <li><a data-action="expand"><i class="icon-expand2"></i></a></li>
+                        <li><a data-action="close"><i class="icon-cross2"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-body collapse in">
+                <div class="card-block">
+                    <form class="form">
+                        <div class="form-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="comtype">Component Type</label>
+                                        <input type="text" id="comtype" class="form-control border-primary" placeholder="Component Type" name="comtype">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="lkno">LK Number</label>
+                                        <input type="text" id="lkno" class="form-control border-primary" placeholder="LK Number" name="lkno">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="userinput8">Description</label>
+                                        <textarea id="userinput8" rows="6" class="form-control border-primary" name="desc" placeholder="Insert a short description about the component"></textarea>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="form-actions right ">
+                            <button type="reset" class="btn btn-danger mr-1">
+                                    <i class="icon-cross2"></i> Clear
+                                </button>
+                            <button type="submit" class="btn btn-success">
+                                    <i class="icon-plus"></i> Add Component
+                                </button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col-xl-7 col-lg-12">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title" id="basic-layout-colored-form-control">Update Component</h4>
+                <a class="heading-elements-toggle"><i class="icon-ellipsis font-medium-3"></i></a>
+                <div class="heading-elements">
+                    <ul class="list-inline mb-0">
+                        <li><a data-action="collapse"><i class="icon-minus4"></i></a></li>
+                        <li><a data-action="reload"><i class="icon-reload"></i></a></li>
+                        <li><a data-action="expand"><i class="icon-expand2"></i></a></li>
+                        <li><a data-action="close"><i class="icon-cross2"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-body collapse in">
+                <div class="card-block">
+                    <form class="form">
+                        <div class="form-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="userselect">Component</label>
+                                        <select id="userselect" name="user" class="form-control border-primary">
+                                            <option value="0" selected="" disabled="">-- Select A Component --</option>
+                                            
+                                        </select>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="ucomtype">Component Type</label>
+                                        <input type="text" id="ucomtype" class="form-control border-primary" placeholder="Component Type" name="ucomtype" disabled>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="ulkno">LK Number</label>
+                                        <input type="text" id="ulkno" class="form-control border-primary" placeholder="LK Number" name="ulkno" disabled>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="udesc">Description</label>
+                                        <textarea id="udesc" rows="5" class="form-control border-primary" name="udesc" placeholder="Update your short description about the component" disabled></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-actions right ">
+                            <button type="reset" class="btn btn-danger mr-1">
+                                    <i class="icon-cross2"></i> Clear
+                                </button>
+                            <button type="submit" class="btn btn-warning">
+                                    <i class="icon-edit"></i> Update
+                                </button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-5 col-lg-12">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title" id="basic-layout-colored-form-control">Delete Component</h4>
+                <a class="heading-elements-toggle"><i class="icon-ellipsis font-medium-3"></i></a>
+                <div class="heading-elements">
+                    <ul class="list-inline mb-0">
+                        <li><a data-action="collapse"><i class="icon-minus4"></i></a></li>
+                        <li><a data-action="reload"><i class="icon-reload"></i></a></li>
+                        <li><a data-action="expand"><i class="icon-expand2"></i></a></li>
+                        <li><a data-action="close"><i class="icon-cross2"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-body collapse in">
+                <div class="card-block">
+                    <form class="form">
+                        <div class="form-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="userselect">Component</label>
+                                        <select id="userselect" name="user" class="form-control border-danger">
+                                            <option value="0" selected="" disabled="">-- Select A Component --</option>
+                                            
+                                        </select>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="dcomtype">Component Type</label>
+                                        <input type="text" id="dcomtype" class="form-control border-danger" placeholder="Component Type" name="dcomtype" disabled>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="dlkno">LK Number</label>
+                                        <input type="text" id="dlkno" class="form-control border-danger" placeholder="LK Number" name="dlkno" disabled>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="udesc">Description</label>
+                                        <textarea id="udesc" rows="5" class="form-control border-danger" name="udesc" placeholder="Short description about the component" disabled></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-actions right ">
+
+                            <button type="submit" class="btn btn-danger">
+                                    <i class="icon-trash"></i> Delete
+                                </button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+{%endblock%}

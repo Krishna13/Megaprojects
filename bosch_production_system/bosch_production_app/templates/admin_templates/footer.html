@@ -1,0 +1,14 @@
+<footer class="footer footer-static footer-light navbar-border">
+    <p class="clearfix text-muted text-sm-center mb-0 px-2"><span class="float-md-left d-xs-block d-md-inline-block"> <a
+                href="https://kwinfosys.com" target="_blank"
+                class="text-bold-800 grey darken-2">KWINFOSYS </a>, All rights reserved. </span>
+        <span id="cur_year"></span>
+        <span class="float-md-right d-xs-block d-md-inline-block">Kwworks V1.0 <i
+                class="icon-heart5 green"></i></span>
+    </p>
+</footer>
+<script>
+    let abc = document.querySelector('#cur_year');
+    let year = new Date().getFullYear();
+    abc.innerHTML = "Copyright " + "&copy; " + year;
+</script>

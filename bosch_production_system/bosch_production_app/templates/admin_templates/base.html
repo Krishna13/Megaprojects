@@ -1,0 +1,420 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" data-textdirection="ltr" class="loading">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="Robust admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
+    <meta name="keywords" content="admin template, robust admin template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="author" content="KWINFOSYS">
+    <title>KWWORKS | Admin Dashboard</title>
+    <link rel="apple-touch-icon" sizes="60x60" href="{% static 'app-assets/images/ico/apple-icon-60.png' %}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{% static 'app-assets/images/ico/apple-icon-76.png' %}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{% static 'app-assets/images/ico/apple-icon-120.png' %}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{% static 'app-assets/images/ico/apple-icon-152.png' %}">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'app-assets/images/ico/favicon.ico' %}">
+    <link rel="shortcut icon" type="image/png" href="{% static 'app-assets/images/ico/favicon-32.png' %}">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <!-- BEGIN VENDOR CSS-->
+    <link rel="stylesheet" type="text/css" href="{% static 'app-assets/css/bootstrap.css' %}">
+    <!-- font icons-->
+    <link rel="stylesheet" type="text/css" href="{% static 'app-assets/fonts/icomoon.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'app-assets/fonts/flag-icon-css/css/flag-icon.min.css' %}">
+    <link rel="stylesheet" href="{% static 'app-assets/fonts/fontawesome-free-5.15.2-web/css/all.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'app-assets/vendors/css/extensions/pace.css' %}">
+    <!-- END VENDOR CSS-->
+    <!-- BEGIN ROBUST CSS-->
+    <link rel="stylesheet" type="text/css" href="{% static 'app-assets/css/bootstrap-extended.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'app-assets/css/app.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'app-assets/css/colors.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'app-assets/css/pages/inbox.css' %}">
+    <!-- END ROBUST CSS-->
+    <!-- BEGIN Page Level CSS-->
+    <link rel="stylesheet" type="text/css" href="{% static 'app-assets/css/core/menu/menu-types/vertical-menu.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'app-assets/css/core/menu/menu-types/vertical-overlay-menu.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'app-assets/css/core/colors/palette-gradient.css' %}">
+    <!-- END Page Level CSS-->
+    <!-- BEGIN Custom CSS-->
+    <!-- END Custom CSS-->
+    <!-- <link rel="stylesheet" href="{% static 'assets/css/style.css' %}"> -->
+
+</head>
+
+<body data-open="click" data-menu="vertical-menu" data-col="2-columns" class="vertical-layout vertical-menu 2-columns  fixed-navbar">
+
+    <!-- navbar-fixed-top-->
+    <nav class="header-navbar navbar navbar-with-menu navbar-fixed-top navbar-semi-dark navbar-shadow">
+        <div class="navbar-wrapper">
+            <div class="navbar-header">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item mobile-menu hidden-md-up float-xs-left"><a class="nav-link nav-menu-main menu-toggle hidden-xs"><i
+                                class="icon-menu5 font-large-1"></i></a></li>
+                    <li class="nav-item">
+                        <a href="#" class="navbar-brand nav-link"><img alt="branding logo" src="{% static 'app-assets/images/logo/kwworks-logo-light.png' %}" data-expand="{% static 'app-assets/images/logo/kwworks-logo-light.png' %}" data-collapse="{% static 'app-assets/images/logo/kwworks-logo-small.png' %}"
+                                class="brand-logo"></a>
+                    </li>
+                    <li class="nav-item hidden-md-up float-xs-right"><a data-toggle="collapse" data-target="#navbar-mobile" class="nav-link open-navbar-container"><i
+                                class="icon-grid2 pe-2x icon-icon-rotate-right-right"></i></a></li>
+                </ul>
+            </div>
+            <div class="navbar-container content container-fluid">
+                <div id="navbar-mobile" class="collapse navbar-toggleable-sm">
+                    <ul class="nav navbar-nav">
+
+                        <li class="nav-item hidden-sm-down"><a class="nav-link nav-menu-main menu-toggle hidden-xs"><i
+                                    class="icon-menu5"> </i></a></li>
+
+
+                    </ul>
+                    <ul class="nav navbar-nav float-xs-right">
+                        <li class="nav-item">
+
+                            <a class="nav-link">
+                                <div class="" style="font-weight: 600;" id="clock"></div>
+                            </a>
+                        </li>
+                        <li class="dropdown dropdown-notification nav-item"><a href="#" data-toggle="dropdown" class="nav-link nav-link-label"><i class="ficon icon-bell4"></i><span
+                            class="tag tag-pill tag-default tag-danger tag-default tag-up">5</span></a>
+                            <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
+                                <li class="dropdown-menu-header">
+                                    <h6 class="dropdown-header m-0"><span class="grey darken-2">Notifications</span><span class="notification-tag tag tag-default tag-danger float-xs-right m-0">5
+                                            New</span></h6>
+                                </li>
+                                <li class="list-group scrollable-container">
+                                    <a href="javascript:void(0)" class="list-group-item">
+                                        <div class="media">
+                                            <div class="media-left valign-middle"><i class="icon-cart3 icon-bg-circle bg-cyan"></i></div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading">You have new order!</h6>
+                                                <p class="notification-text font-small-3 text-muted">Lorem ipsum dolor sit amet, consectetuer elit.</p><small>
+                                                    <time datetime="2015-06-11T18:29:20+08:00"
+                                                        class="media-meta text-muted">30 minutes ago</time></small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)" class="list-group-item">
+                                        <div class="media">
+                                            <div class="media-left valign-middle"><i class="icon-monitor3 icon-bg-circle bg-red bg-darken-1"></i></div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading red darken-1">99% Server load</h6>
+                                                <p class="notification-text font-small-3 text-muted">Aliquam tincidunt mauris eu risus.</p><small>
+                                                    <time datetime="2015-06-11T18:29:20+08:00"
+                                                        class="media-meta text-muted">Five hour ago</time></small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)" class="list-group-item">
+                                        <div class="media">
+                                            <div class="media-left valign-middle"><i class="icon-server2 icon-bg-circle bg-yellow bg-darken-3"></i></div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading yellow darken-3">Warning notifixation</h6>
+                                                <p class="notification-text font-small-3 text-muted">Vestibulum auctor dapibus neque.</p><small>
+                                                    <time datetime="2015-06-11T18:29:20+08:00"
+                                                        class="media-meta text-muted">Today</time></small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)" class="list-group-item">
+                                        <div class="media">
+                                            <div class="media-left valign-middle"><i class="icon-check2 icon-bg-circle bg-green bg-accent-3"></i></div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading">Complete the task</h6><small>
+                                                    <time datetime="2015-06-11T18:29:20+08:00"
+                                                        class="media-meta text-muted">Last week</time></small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)" class="list-group-item">
+                                        <div class="media">
+                                            <div class="media-left valign-middle"><i class="icon-bar-graph-2 icon-bg-circle bg-teal"></i></div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading">Generate monthly report</h6><small>
+                                                    <time datetime="2015-06-11T18:29:20+08:00"
+                                                        class="media-meta text-muted">Last month</time></small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="dropdown-menu-footer"><a href="javascript:void(0)" class="dropdown-item text-muted text-xs-center">Read all notifications</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-notification nav-item"><a href="#" data-toggle="dropdown" class="nav-link nav-link-label"><i class="ficon icon-mail6"></i><span
+                                    class="tag tag-pill tag-default tag-info tag-default tag-up">8</span></a>
+                            <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
+                                <li class="dropdown-menu-header">
+                                    <h6 class="dropdown-header m-0"><span class="grey darken-2">Messages</span><span class="notification-tag tag tag-default tag-info float-xs-right m-0">4
+                                            New</span></h6>
+                                </li>
+                                <li class="list-group scrollable-container">
+                                    <a href="javascript:void(0)" class="list-group-item">
+                                        <div class="media">
+                                            <div class="media-left"><span class="avatar avatar-sm avatar-online rounded-circle"><img
+                                                        src="{% static 'app-assets/images/portrait/small/avatar-s-1.png' %}"
+                                                        alt="avatar"><i></i></span></div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading">Margaret Govan</h6>
+                                                <p class="notification-text font-small-3 text-muted">I like your portfolio, let's start the project.</p><small>
+                                                    <time datetime="2015-06-11T18:29:20+08:00"
+                                                        class="media-meta text-muted">Today</time></small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)" class="list-group-item">
+                                        <div class="media">
+                                            <div class="media-left"><span class="avatar avatar-sm avatar-busy rounded-circle"><img
+                                                        src="{% static 'app-assets/images/portrait/small/avatar-s-2.png'%}"
+                                                        alt="avatar"><i></i></span></div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading">Bret Lezama</h6>
+                                                <p class="notification-text font-small-3 text-muted">I have seen your work, there is</p><small>
+                                                    <time datetime="2015-06-11T18:29:20+08:00"
+                                                        class="media-meta text-muted">Tuesday</time></small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)" class="list-group-item">
+                                        <div class="media">
+                                            <div class="media-left"><span class="avatar avatar-sm avatar-online rounded-circle"><img
+                                                        src="{% static 'app-assets/images/portrait/small/avatar-s-3.png'%}"
+                                                        alt="avatar"><i></i></span></div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading">Carie Berra</h6>
+                                                <p class="notification-text font-small-3 text-muted">Can we have call in this week ?</p><small>
+                                                    <time datetime="2015-06-11T18:29:20+08:00"
+                                                        class="media-meta text-muted">Friday</time></small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)" class="list-group-item">
+                                        <div class="media">
+                                            <div class="media-left"><span class="avatar avatar-sm avatar-away rounded-circle"><img
+                                                        src="{% static 'app-assets/images/portrait/small/avatar-s-6.png'%}"
+                                                        alt="avatar"><i></i></span></div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading">Eric Alsobrook</h6>
+                                                <p class="notification-text font-small-3 text-muted">We have project party this saturday night.</p><small>
+                                                    <time datetime="2015-06-11T18:29:20+08:00"
+                                                        class="media-meta text-muted">last month</time></small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="dropdown-menu-footer"><a href="javascript:void(0)" class="dropdown-item text-muted text-xs-center">Read all messages</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-user nav-item"><a href="#" data-toggle="dropdown" class="dropdown-toggle nav-link dropdown-user-link"><span
+                                    class="avatar avatar-online"><img
+                                        src="{% static 'app-assets/images/portrait/small/avatar-s-1.png' %}"
+                                        alt="avatar"><i></i></span><span class="user-name">John Doe</span></a>
+                            <div class="dropdown-menu dropdown-menu-right"><a href="#" class="dropdown-item"><i
+                                        class="icon-head"></i> Edit Profile</a><a href="#" class="dropdown-item"><i
+                                        class="icon-mail6"></i> My Inbox</a><a href="#" class="dropdown-item"><i
+                                        class="icon-clipboard2"></i> Task</a>
+                                <a href="#" class="dropdown-item"><i class="icon-calendar5"></i> Calender</a>
+                                <div class="dropdown-divider"></div><a href="#" class="dropdown-item"><i
+                                        class="icon-power3"></i> Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ////////////////////////////////////////////////////////////////////////////-->
+    {%include 'admin_templates/side_bar.html'%}
+    <div class="app-content content container-fluid">
+        <div class="content-wrapper">
+            <div class="content-header row">
+            </div>
+            {%block main_content%} {%endblock%}
+
+        </div>
+    </div>
+    {%include 'admin_templates/footer.html'%}
+    <!-- ////////////////////////////////////////////////////////////////////////////-->
+
+
+    <!-- BEGIN VENDOR JS-->
+    <script src="{% static 'app-assets/js/core/libraries/jquery.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'app-assets/vendors/js/ui/tether.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'app-assets/js/core/libraries/bootstrap.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'app-assets/vendors/js/ui/perfect-scrollbar.jquery.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'app-assets/vendors/js/ui/unison.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'app-assets/vendors/js/ui/blockUI.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'app-assets/vendors/js/ui/jquery.matchHeight-min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'app-assets/vendors/js/ui/screenfull.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'app-assets/vendors/js/extensions/pace.min.js' %}" type="text/javascript"></script>
+    <!-- BEGIN VENDOR JS-->
+    <!-- BEGIN PAGE VENDOR JS-->
+    <script src="{% static 'app-assets/vendors/js/charts/chart.min.js' %}" type="text/javascript"></script>
+    <!-- END PAGE VENDOR JS-->
+    <!-- BEGIN ROBUST JS-->
+    <script src="{% static 'app-assets/js/core/app-menu.js' %}" type="text/javascript"></script>
+    <script src="{% static 'app-assets/js/core/app.js' %}" type="text/javascript"></script>
+    <!-- END ROBUST JS-->
+    <!-- BEGIN PAGE LEVEL JS-->
+    <script src="{% static 'app-assets/js/scripts/pages/dashboard-2.js' %}" type="text/javascript"></script>
+
+    <!-- END PAGE LEVEL JS-->
+    <!-- <script src="{% static 'app-assets/js/scripts/charts/chartjs/pie-doughnut/doughnut-simple.js' %}" type="text/javascript"></script> -->
+    <!-- <script src="{% static 'app-assets/js/scripts/charts/chartjs/bar/bar-stacked.js' %}" type="text/javascript"></script> -->
+    <script src="./settings.js"></script>
+    <script>
+        setInterval(showTime, 1000);
+
+        function showTime() {
+            let time = new Date();
+            let hour = time.getHours();
+            let min = time.getMinutes();
+            let sec = time.getSeconds();
+            let day = time.getDay()
+            am_pm = "AM";
+
+            if (hour > 12) {
+                hour -= 12;
+                am_pm = "PM";
+            }
+            if (hour == 0) {
+                hr = 12;
+                am_pm = "AM";
+            }
+
+            if (day == 1) {
+                day = "Monday";
+            }
+            if (day == 2) {
+                day = "Tuesday";
+            }
+            if (day == 3) {
+                day = "Wednesday";
+            }
+            if (day == 4) {
+                day = "Thursday";
+            }
+            if (day == 5) {
+                day = "Friday";
+            }
+            if (day == 6) {
+                day = "Saturday";
+            }
+
+            if (day == 0) {
+                day = "Sunday";
+            }
+
+
+            hour = hour < 10 ? "0" + hour : hour;
+            min = min < 10 ? "0" + min : min;
+            sec = sec < 10 ? "0" + sec : sec;
+
+            let currentTime = day + " " + hour + ":" +
+                min + ":" + sec + " " + am_pm;
+
+            document.getElementById("clock")
+                .innerHTML = currentTime;
+        }
+
+        showTime();
+    </script>
+    <script>
+        $(window).on("load", function() {
+            var ctx = $("#simple-doughnut-chart");
+            var chartOptions = {
+                responsive: true,
+                maintainAspectRatio: false,
+            };
+            var chartData = {
+                labels: ["January", "February", "March", "April", "May"],
+                datasets: [{
+                    label: "My First dataset",
+                    data: [66, 35, 24, 45, 85],
+                    backgroundColor: ["#00bbf0", "#ff6f3c", "#ffc93c", "#ff9a3c", "#155263"],
+                }]
+            };
+            var config = {
+                type: 'doughnut',
+                options: chartOptions,
+
+                data: chartData
+            };
+            var doughnutSimpleChart = new Chart(ctx, config);
+        });
+    </script>
+    <script>
+        $(window).on("load", function() {
+            var ctx = $("#bar-stacked");
+            var chartOptions = {
+                title: {
+                    display: false,
+                    text: "Chart.js Bar Chart - Stacked"
+                },
+                tooltips: {
+                    mode: 'label'
+                },
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    xAxes: [{
+                        stacked: true,
+                        display: true,
+                        gridLines: {
+                            color: "#f3f3f3",
+                            drawTicks: false,
+                        },
+                        scaleLabel: {
+                            display: true,
+                        }
+                    }],
+                    yAxes: [{
+                        stacked: true,
+                        display: true,
+                        gridLines: {
+                            color: "#f3f3f3",
+                            drawTicks: false,
+                        },
+                        scaleLabel: {
+                            display: true,
+                        }
+                    }]
+                }
+            };
+            var chartData = {
+                labels: ["January ", "February ", "March ", "April ", "May "],
+                datasets: [{
+                    label: "My First dataset",
+                    data: [6, 59, 80, 81, 56],
+                    backgroundColor: "#00BFA5",
+                    hoverBackgroundColor: "rgba(0,191,165,.8)",
+                    borderColor: "transparent"
+                }, {
+                    label: "My Second dataset",
+                    data: [28, 48, 40, 19, 86],
+                    backgroundColor: "#1DE9B6",
+                    hoverBackgroundColor: "rgba(29,233,182,.8)",
+                    borderColor: "transparent"
+                }, {
+                    label: "My Third dataset",
+                    data: [80, 25, 16, 36, 67],
+                    backgroundColor: "#64FFDA",
+                    hoverBackgroundColor: "rgba(100,255,218,.8)",
+                    borderColor: "transparent"
+                }]
+            };
+            var config = {
+                type: 'horizontalBar',
+                options: chartOptions,
+
+                data: chartData
+            };
+            var lineChart = new Chart(ctx, config);
+        });
+    </script>
+
+</body>
+
+</html>

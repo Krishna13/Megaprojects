@@ -1,0 +1,96 @@
+{%load static%}
+<style>
+    .nav-item.active {
+        border-left: 4px solid #00adb5;
+    }
+    
+    .nav-item a {
+        text-overflow: clip !important;
+    }
+</style>
+<!-- main menu-->
+<div data-scroll-to-active="true" class="main-menu menu-fixed menu-dark menu-accordion menu-shadow">
+    <!-- main menu header-->
+    <div class="main-menu-header">
+        <input type="text" placeholder="Search" class="menu-search form-control round" />
+    </div>
+    <!-- / main menu header-->
+    <!-- main menu content-->
+    <div class="main-menu-content">
+        <ul id="main-menu-navigation" data-menu="menu-navigation" class="navigation navigation-main">
+            {% url 'admin_dashboard' as admin_dashboard %}
+            <li class=" nav-item {% if request.path == admin_dashboard %} active {% endif %}"><a href="{{ admin_dashboard }}"><i class="icon-home3"></i><span data-i18n="nav.dash.main"
+                        class="menu-title">Dashboard</span></a>
+            </li>
+            {% url 'users' as users %}
+            <li class=" nav-item {% if request.path == users %} active {% endif %}"><a href="{{ users }}"><i class="icon-user4"></i><span data-i18n="nav.dash.main"
+                        class="menu-title">Users</span></a>
+            </li>
+            {% url 'components' as components %}
+            <li class=" nav-item {% if request.path == components %} active {% endif %}"><a href="{{components}}"><i class="icon-cubes"></i><span data-i18n="nav.dash.main"
+                        class="menu-title">Components</span></a>
+            </li>
+
+            <li class=" nav-item"><a href="#"><i class="icon-steam3"></i><span data-i18n="nav.dash.main"
+                        class="menu-title">Assets</span></a>
+            </li>
+            <li class=" nav-item"><a href="#"><i class="icon-sitemap"></i><span data-i18n="nav.dash.main"
+                        class="menu-title">Departments</span></a>
+            </li>
+            <li class="navigation-header"><span data-i18n="nav.category.support">Processes</span><i data-toggle="tooltip" data-placement="right" data-original-title="Processes" class="icon-ellipsis icon-ellipsis"></i>
+            </li>
+
+
+            <!-- processe -->
+
+            <li class=" nav-item"><a href="#"><i class="icon-drop"></i><span data-i18n="nav.dash.main"
+                class="menu-title">Aquaous cleanning</span></a>
+            </li>
+            <li class=" nav-item"><a href="#"><i class="icon-disc2"></i><span data-i18n="nav.dash.main"
+                class="menu-title">Chamfer grinding</span></a>
+            </li>
+            <li class=" nav-item"><a href="#"><i class="icon-help2"></i><span data-i18n="nav.dash.main"
+                class="menu-title">Internal Grinding</span></a>
+            </li>
+            <li class=" nav-item"><a href="#"><i class="icon-pencil2"></i><span data-i18n="nav.dash.main"
+                class="menu-title">Inspection seat Visual</span></a>
+            </li>
+            <li class=" nav-item"><a href="#"><i class="icon-wrench3"></i><span data-i18n="nav.dash.main"
+                class="menu-title">Inspection Bore etamic</span></a>
+            </li>
+            <li class=" nav-item"><a href="#"><i class="icon-cog3"></i><span data-i18n="nav.dash.main"
+                class="menu-title">External Grinding</span></a>
+            </li>
+            <li class=" nav-item"><a href="#"><i class="icon-esc"></i><span data-i18n="nav.dash.main"
+                class="menu-title">Ball grinding</span></a>
+            </li>
+            <li class=" nav-item"><a href="#"><i class="icon-edit2"></i><span data-i18n="nav.dash.main"
+                class="menu-title">Laser marking</span></a>
+            </li>
+            <li class=" nav-item"><a href="#"><i class="icon-repeat2"></i><span data-i18n="nav.dash.main"
+                class="menu-title">Shaft diameter checking</span></a>
+            </li>
+
+            <li class="navigation-header"><span data-i18n="nav.category.support">Account</span><i data-toggle="tooltip" data-placement="right" data-original-title="Account" class="icon-ellipsis icon-ellipsis"></i>
+            </li>
+            {% url 'profile' as profile %}
+            <li class=" nav-item {% if request.path == profile %} active {% endif %}"><a href="{{profile}}"><i class="icon-gear"></i><span data-i18n="nav.dash.main"
+                class="menu-title">Settings & Profile</span></a>
+            </li>
+            {% url 'inbox' as inbox %}
+            <li class=" nav-item {% if request.path == inbox %} active {% endif %}"><a href="{{inbox}}"><i class="icon-mail6"></i><span data-i18n="nav.dash.main"
+                class="menu-title">Inbox</span></a>
+            </li>
+            <li class="navigation-header"><span data-i18n="nav.category.support">End</span><i data-toggle="tooltip" data-placement="right" data-original-title="End" class="icon-ellipsis icon-ellipsis"></i>
+            </li>
+        </ul>
+
+
+
+    </div>
+    <!-- /main menu content-->
+    <!-- main menu footer-->
+    <!-- include includes/menu-footer-->
+    <!-- main menu footer-->
+</div>
+<!-- / main menu-->

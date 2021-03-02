@@ -1,0 +1,138 @@
+{% extends 'admin_templates/base.html' %} {% load static %} {%block main_content%}
+<div class="row">
+    <div class="col-xs-12">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Inbox</h4>
+                <a class="heading-elements-toggle"><i class="icon-ellipsis font-medium-3"></i></a>
+                <div class="heading-elements">
+                    <ul class="list-inline mb-0">
+                        <li><a data-action="reload"><i class="icon-reload"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-body collapse in">
+                <div class="card-block card-dashboard">
+                    <h5>Today's Recent Messages</h5>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table mb-0">
+                        <thead>
+                            <tr>
+                                <th>Main Id</th>
+                                <th>Profile</th>
+                                <th>Name</th>
+                                <th>Username</th>
+                                <th>Message</th>
+                                <th>Actions</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr id="1">
+                                <th scope="row">1as</th>
+                                <td class="text-truncate">
+                                    <span class="avatar avatar-xs"><img src="{% static 'app-assets/images/portrait/small/avatar-s-5.png' %}" alt="avatar"></span> <span>Krish W</span>
+                                </td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus adipisci quas inventore.</td>
+                                <td>
+                                    <ul class="list-inline mb-0">
+                                        <li><a class="collapseAnimation" onclick="document.getElementById('1').style.display='none' "><i class="icon-close"></i></a></li>
+                                        <li><a><i class="icon-trash2"></i></a></li>
+                                    </ul>
+                                </td>
+
+                            </tr>
+                            <tr id="2">
+                                <th scope="row">2as</th>
+                                <td class="text-truncate">
+                                    <span class="avatar avatar-xs"><img src="{% static 'app-assets/images/portrait/small/avatar-s-5.png' %}" alt="avatar"></span> <span>Krish W</span>
+                                </td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus adipisci quas inventore.</td>
+                                <td>
+                                    <ul class="list-inline mb-0">
+                                        <li><a class="collapseAnimation" onclick="document.getElementById('2').style.display='none' "><i class="icon-close"></i></a></li>
+                                        <li><a><i class="icon-trash2"></i></a></li>
+                                    </ul>
+                                </td>
+
+                            </tr>
+                            <tr id="3">
+                                <th scope="row">3as</th>
+                                <td class="text-truncate">
+                                    <span class="avatar avatar-xs"><img src="{% static 'app-assets/images/portrait/small/avatar-s-5.png' %}" alt="avatar"></span> <span>Krish W</span>
+                                </td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus adipisci quas inventore.</td>
+                                <td>
+                                    <ul class="list-inline mb-0">
+                                        <li><a class="collapseAnimation" onclick="document.getElementById('3').style.display='none' "><i class="icon-close"></i></a></li>
+                                        <li><a><i class="icon-trash2"></i></a></li>
+                                    </ul>
+                                </td>
+
+                            </tr>
+                            <tr id="4">
+                                <th scope="row">4as</th>
+                                <td class="text-truncate">
+                                    <span class="avatar avatar-xs"><img src="{% static 'app-assets/images/portrait/small/avatar-s-5.png' %}" alt="avatar"></span> <span>Krish W</span>
+                                </td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus adipisci quas inventore.</td>
+                                <td>
+                                    <ul class="list-inline mb-0">
+                                        <li><a class="collapseAnimation" onclick="document.getElementById('4').style.display='none' "><i class="icon-close"></i></a></li>
+                                        <li><a><i class="icon-trash2"></i></a></li>
+                                    </ul>
+                                </td>
+
+                            </tr>
+                            <tr id="5">
+                                <th scope="row">5as</th>
+                                <td class="text-truncate">
+                                    <span class="avatar avatar-xs"><img src="{% static 'app-assets/images/portrait/small/avatar-s-5.png' %}" alt="avatar"></span> <span>Krish W</span>
+                                </td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus adipisci quas inventore.</td>
+                                <td>
+                                    <ul class="list-inline mb-0">
+                                        <li><a class="collapseAnimation" onclick="document.getElementById('5').style.display='none' "><i class="icon-close"></i></a></li>
+                                        <li><a><i class="icon-trash2"></i></a></li>
+                                    </ul>
+                                </td>
+
+                            </tr>
+                            <tr id="6">
+                                <th scope="row">6as</th>
+                                <td class="text-truncate">
+                                    <span class="avatar avatar-xs"><img src="{% static 'app-assets/images/portrait/small/avatar-s-5.png' %}" alt="avatar"></span> <span>Krish W</span>
+                                </td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus adipisci quas inventore.</td>
+                                <td>
+                                    <ul class="list-inline mb-0">
+                                        <li><a class="collapseAnimation" onclick="document.getElementById('6').style.display='none' "><i class="icon-close"></i></a></li>
+                                        <li><a><i class="icon-trash2"></i></a></li>
+                                    </ul>
+                                </td>
+
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{%endblock%}
